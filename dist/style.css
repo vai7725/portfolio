@@ -566,6 +566,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -802,12 +806,26 @@ video {
   line-height: 2rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .tracking-\[1px\] {
   letter-spacing: 1px;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-extraLightGreen {
@@ -843,6 +861,11 @@ video {
 .text-bgPrimary {
   --tw-text-opacity: 1;
   color: rgb(4 13 18 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-\[0\.7\] {
@@ -907,6 +930,10 @@ video {
   }
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:border-none:hover {
   border-style: none;
 }
@@ -938,6 +965,15 @@ video {
 .hover\:text-bgPrimary:hover {
   --tw-text-opacity: 1;
   color: rgb(4 13 18 / var(--tw-text-opacity));
+}
+
+.hover\:text-lightGreen:hover {
+  --tw-text-opacity: 1;
+  color: rgb(92 131 116 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .hover\:opacity-\[1\]:hover {
@@ -982,6 +1018,11 @@ video {
 
   .sm\:text-start {
     text-align: start;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
