@@ -31,11 +31,16 @@
 }
 
 .js-delay {
-  transition: opacity 500ms linear;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
 }
 
 .js-delay-500 {
-  transition: opacity 500ms linear 500ms;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: linearout;
+  transition-delay: 500ms;
 }
 
 .js-show {
