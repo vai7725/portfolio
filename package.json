@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "style": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
