@@ -10,19 +10,17 @@
       href="./assets/portfolio logo.png"
       type="image/x-icon"
     />
-    <script
-      src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
-      defer
-    ></script>
   </head>
-  <body class="bg-bgPrimary text-white">
-    <header class="py-4 sm:px-8 px-2 my-4 js-hidden">
+  <body class="bg-bgPrimary text-white overflow-x-hidden">
+    <!-- Logo -->
+    <header class="py-4 sm:px-8 px-2 my-4 header">
       <img
         src="./assets/portfolio logo.png"
         alt="Logo"
-        class="w-12 h-12 rounded"
+        class="w-12 h-12 rounded logo"
       />
     </header>
+
     <main class="">
       <!-- landing section -->
       <section
@@ -30,207 +28,246 @@
       >
         <div class="sm:w-1/2 sm:text-start my-2">
           <h1
-            class="js-hidden-delayed text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-extraLightGreen font-semibold tracking-[1px]"
+            class="hero-intro relative text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-extraprimary font-semibold tracking-[1px]"
           >
-            I'm <span class="text-lightGreen">Vaibhav Prajapat</span>.
+            I'm <span class="text-primary name">Vaibhav Prajapat</span>.
             Passionate programmer and dedicated developer.
           </h1>
-          <p
-            class="text-gray-400 text-xl tracking-[1px] my-4 js-hidden-delayed"
-          >
+          <p class="hero-desc text-xl tracking-[1px] my-4 text-text">
             As a proficient MERN stack developer, I leverage industry best
             practices to transform creative ideas into functional and visually
             captivating web solutions, turning concepts into digital reality
           </p>
-          <a
-            href="https://drive.google.com/file/d/1ucD24v7M1Gfhw_60leiNktBW2D9puiTV/view?usp=sharing"
-            target="_blank"
-            class="text-lightGreen px-8 py-2 text-xl font-semibold rounded border-lightGreen border-[1px] hover:bg-lightGreen hover:text-bgPrimary transition-all js-hidden-delayed"
-          >
-            Check my Resume!
-          </a>
-          <div class="my-4 js-hidden-delayed flex items-center justify-start">
+          <div class="perks">
             <a
+              href="https://drive.google.com/file/d/1ucD24v7M1Gfhw_60leiNktBW2D9puiTV/view?usp=sharing"
               target="_blank"
-              href="https://www.linkedin.com/in/vaibhav-prajapat-52b773232/"
-              class="flex w-fit justify-center items-center mr-2 hover:border-b-[1px] border-lightGreen"
+              class="text-primary px-8 py-2 text-xl font-semibold rounded border-primary border-[1px] hover:bg-primary hover:text-bgPrimary transition-all"
             >
-              <box-icon
-                name="linkedin-square"
-                type="logo"
-                color="#5c8374"
-                class="opacity-[0.7] hover:opacity-[1] cursor-pointer transition-all"
-                size="3.25rem"
-              ></box-icon>
-            </a>
-
-            <a
-              target="_blank"
-              href="https://github.com/vai7725"
-              class="flex w-fit justify-center items-center mr-2 hover:border-b-[1px] border-lightGreen"
-            >
-              <box-icon
-                name="github"
-                type="logo"
-                color="#5c8374"
-                class="opacity-[0.7] hover:opacity-[1] cursor-pointer transition-all"
-                size="3.25rem"
-              ></box-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://twitter.com/Vaibhav90909"
-              class="flex w-fit justify-center items-center mr-2 hover:border-b-[1px] border-lightGreen"
-            >
-              <box-icon
-                name="twitter"
-                type="logo"
-                color="#5c8374"
-                class="opacity-[0.7] hover:opacity-[1] cursor-pointer transition-all"
-                size="3.25rem"
-              ></box-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/vaibhav_prajapat_7725/"
-              class="flex w-fit justify-center items-center mr-2 hover:border-b-[1px] border-lightGreen"
-            >
-              <box-icon
-                name="instagram"
-                type="logo"
-                color="#5c8374"
-                class="opacity-[0.7] hover:opacity-[1] cursor-pointer transition-all"
-                size="3.25rem"
-              ></box-icon>
+              Check my Resume!
             </a>
           </div>
         </div>
         <div
           class="sm:w-1/2 w-full sm:text-start my-2 flex items-center justify-center"
         >
-          <div
-            class="relative hero-img-box js-hidden shadow-2xl shadow-gray-600"
-          >
-            <img src="./assets/heroImg.jpg" alt="" class="rounded w-[500px]" />
+          <div class="imgBox relative hero-img-box">
+            <img
+              src="./assets/heroImg.jpg"
+              alt=""
+              class="rounded w-[500px] custom-radius heroImg"
+            />
           </div>
         </div>
       </section>
 
-      <!-- project section -->
-      <section class="my-8 sm:px-8 px-2">
-        <div class="js-hidden">
-          <h5 class="text-lightGreen font-semibold text-xl">
-            What I've built?
-          </h5>
-          <h1 class="text-xl sm:text-3xl tracking-[1px] text-gray-400">
-            I've built amazing projects and here are some
-          </h1>
-        </div>
-
-        <!-- project cards  -->
-        <div class="py-10 flex flex-wrap">
+      <!-- project showcase section -->
+      <section class="my-8 sm:px-8 px-2 min-h-screen" id="project-section">
+        <div class="grid grid-cols-2 auto-rows-fr gap-12">
           <div
-            class="w-full sm:w-[30%] min-w-[300px] border-2 border-gray-800 p-3 rounded my-2 sm:m-2 js-hidden-delayed"
+            class="sm:col-span-1 col-span-2 py-4 flex flex-col project-card project-card-left-1"
           >
-            <h3 class="text-3xl font-semibold">Previous Papers</h3>
-            <p class="text-gray-500 my-2">
-              'Previous Papers' is the project which helps my college mates to
-              download previous year question papers to prepare for exams. This
-              project is made in MERN stack with tailwind CSS. In this project
-              there is a cookie based authentication system. There are different
-              roles in the website to manage question papers and users.
+            <h2 class="text-3xl text-primary font-bold">Featured Projects!</h2>
+            <p class="text-xl">
+              Noteworthy projects that demonstrate my abilities and achievements
             </p>
-            <div class="py-2 grid">
-              <a
-                href="https://previouspapers.netlify.app/"
-                target="_blank"
-                class="text-bgPrimary px-4 py-2 text-xl font-semibold rounded border-lightGreen border-[1px] bg-lightGreen transition-all hover:bg-extraLightGreen hover:border-extraLightGreen mt-1 mr-1 text-center"
-              >
-                Live Preview
-              </a>
-              <a
-                href="https://github.com/vai7725/ppw-v3"
-                target="_blank"
-                class="text-lightGreen px-4 py-2 text-xl font-semibold rounded border-lightGreen border-[1px] hover:bg-lightGreen hover:text-bgPrimary transition-all mt-1 mr-1 text-center"
-              >
-                Source Code
-              </a>
-            </div>
           </div>
+          <!-- project cards -->
+          <a
+            href="https://sydneygroupservices.com/"
+            target="_blank"
+            class="col-span-2 sm:col-span-1 row-span-2 rounded bg-secondary project-card project-card-right-1"
+          >
+            <img
+              src="./assets/projectAssets/sydneyGroup.webp"
+              alt=""
+              class="rounded-t"
+            />
+            <div class="px-4 pb-2">
+              <div class="mb-2">
+                <h2 class="text-xl font-semibold">Sydney Group</h2>
+                <span
+                  class="inline-flex items-center rounded-md ring-primary px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset"
+                  >React.js</span
+                >
+                <span
+                  class="inline-flex items-center rounded-md ring-primary px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset"
+                  >Typescript</span
+                >
+              </div>
+              <div class="bg-gray-600 h-[1px]"></div>
+              <p>
+                A freelance project developed using React.js, featuring a
+                bespoke design tailored to the client's unique needs.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://previouspapers.vercel.app"
+            target="_blank"
+            class="col-span-2 sm:col-span-1 row-span-2 rounded bg-secondary project-card project-card-left-2"
+          >
+            <img
+              src="./assets/projectAssets/ppw.webp"
+              alt=""
+              class="rounded-t"
+            />
+            <div class="px-4 pb-2">
+              <div class="mb-2">
+                <h2 class="text-xl font-semibold">Previous Year Papers</h2>
+                <span
+                  class="inline-flex items-center rounded-md ring-primary px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset"
+                  >Next.js</span
+                >
+                <span
+                  class="inline-flex items-center rounded-md ring-primary px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset"
+                  >Typescript</span
+                >
+              </div>
+              <div class="bg-gray-600 h-[1px]"></div>
+              <p>
+                A website which helps students to prepare for their exams by
+                downloading previous year question papers for free.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://previouspapers.vercel.app"
+            target="_blank"
+            class="col-span-2 sm:col-span-1 row-span-2 rounded bg-secondary project-card project-card-right-2 flex items-center justify-center"
+          >
+            Ecommerce | Comming Soon
+          </a>
         </div>
       </section>
 
       <!-- technologies showcase section -->
-      <section class="my-8 sm:px-8 px-2">
-        <div class="py-24 sm:py-32">
-          <div class="max-w-7xl">
-            <h2
-              class="text-start text-xl font-semibold leading-8 text-lightGreen js-hidden"
-            >
-              Technologies I work with
-            </h2>
-            <div
-              class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 js-hidden-delayed"
-            >
+
+      <section class="my-24 sm:px-8 px-2">
+        <div class="space-y-8" id="tech-stack">
+          <div class="tech-stack-content">
+            <h2 class="text-3xl text-primary font-bold">Tech Stack</h2>
+            <p class="text-xl">
+              An overview of the technologies and platforms I excel in
+            </p>
+          </div>
+          <div class="flex overflow-x-hidden min-w-fit tech-stack-content">
+            <div class="flex space-x-16 flex-shrink-0 animate-loop-scroll">
               <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="./assets/typescript.png"
-                alt="Typescript"
-                width="160"
-                height="60"
-              />
-              <img
-                class="col-span-2 max-h-16 w-full object-contain lg:col-span-1 aspect-square"
-                src="./assets/mongodb.png"
+                class="max-h-24"
+                src="./assets/techLogos/mongo-db.webp"
                 alt="MongoDB"
               />
+
               <img
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="./assets/nodejs.png"
-                alt="Express.js"
-                width="158"
-                height="48"
-              />
-              <img
-                class="col-span-2 max-h-16 w-full object-contain sm:col-start-2 lg:col-span-1"
-                src="./assets/react-logo.png"
+                class="max-h-24"
+                src="./assets/techLogos/react.webp"
                 alt="React.js"
               />
               <img
-                class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src="./assets/express.png"
+                class="max-h-24"
+                src="./assets/techLogos/nodejs.webp"
                 alt="Node.js"
-                width="158"
-                height="48"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/git.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/github.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/javascript.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/tailwind.webp"
+                alt="Typescript"
+              />
+
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/express.png"
+                alt="Express.js"
+              />
+            </div>
+            <div class="flex space-x-16 flex-shrink-0 animate-loop-scroll">
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/mongo-db.webp"
+                alt="MongoDB"
+              />
+
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/react.webp"
+                alt="React.js"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/nodejs.webp"
+                alt="Node.js"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/git.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/github.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/javascript.webp"
+                alt="Typescript"
+              />
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/tailwind.webp"
+                alt="Typescript"
+              />
+
+              <img
+                class="max-h-24"
+                src="./assets/techLogos/express.png"
+                alt="Express.js"
               />
             </div>
           </div>
         </div>
       </section>
-
       <!-- contact section -->
       <section class="my-8 sm:px-8 px-2">
-        <div class="js-hidden">
-          <h5 class="text-lightGreen font-semibold text-xl">Contact</h5>
-          <h1 class="text-xl sm:text-3xl tracking-[1px] text-gray-400">
-            Reach me out <span class="text-lightGreen">here</span>
+        <div class="contact-element">
+          <h5 class="text-3xl text-primary font-bold">Get in touch</h5>
+          <h1 class="text-xl">
+            Feel free to drop me a message for any questions or opportunities
           </h1>
         </div>
-        <div class="flex flex-wrap my-4 js-hidden-delayed">
+        <div class="flex flex-wrap my-4 contact-element">
           <div class="w-full sm:w-[30%] min-w-[300px] rounded my-2 sm:m-2">
             <h3 class="text-xl text-gray-500">Social (fastest)</h3>
             <a
-              href="https://www.instagram.com/vaibhav_prajapat_7725/"
+              href="https://www.linkedin.com/in/vaibhavprajapat/"
               target="_blank"
-              class="text-xl sm:text-3xl mr-4 font-semibold hover:cursor-pointer transition-all hover:text-lightGreen"
-              >Instagram</a
-            >
-            <a
-              href="https://www.linkedin.com/in/vaibhav-prajapat-52b773232/"
-              target="_blank"
-              class="text-xl sm:text-3xl mr-4 font-semibold hover:cursor-pointer transition-all hover:text-lightGreen"
+              class="text-xl sm:text-3xl mr-4 font-semibold hover:cursor-pointer transition-all hover:text-primary"
               >Linked in</a
             >
+            <a
+              href="https://www.instagram.com/vaibhav_prajapat_7725/"
+              target="_blank"
+              class="text-xl sm:text-3xl mr-4 font-semibold hover:cursor-pointer transition-all hover:text-primary"
+              >Instagram</a
+            >
+
             <p class="text-lg tracking-wide text-gray-400">
               For all regular or urgent queries
             </p>
@@ -252,13 +289,13 @@
 
       <!-- footer -->
       <footer
-        class="py-8 sm:px-8 px-2 bg-[#06131b] flex justify-between items-center"
+        class="py-8 sm:px-8 px-2 bg-secondary flex justify-between items-center"
       >
-        <p class="flex items-center tracking-[1px] text-xl">
-          <box-icon name="copyright" color="#f5f2f2"></box-icon>
+        <p class="flex items-center tracking-[1px] text-xl footer-elem">
+          <box-icon name="copyright" color="#acc2ef"></box-icon>
           <span class="year"></span>, All rights reserved
         </p>
-        <button class="scroll-top-btn">
+        <button class="scroll-top-btn footer-elem">
           <box-icon
             name="chevron-up"
             color="#ffffff"
@@ -269,6 +306,9 @@
       </footer>
     </main>
 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
