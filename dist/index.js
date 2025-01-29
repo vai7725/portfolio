@@ -135,6 +135,20 @@ projectSectionTl.from('.project-card-right-2', {
   delay: 0.5,
   stagger: 1,
 })
+projectSectionTl.from('.project-card-left-3', {
+  opacity: 0,
+  x: -100,
+  duration: 0.5,
+  delay: 0.5,
+  stagger: 1,
+})
+projectSectionTl.from('.project-card-right-3', {
+  opacity: 0,
+  x: 100,
+  duration: 0.5,
+  delay: 0.5,
+  stagger: 1,
+})
 
 let techStackTl = gsap.timeline({
   scrollTrigger: {
